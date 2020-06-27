@@ -1,0 +1,617 @@
+body {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.main-page-header {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 120px;
+    background: rgba(94, 93, 88, 0.6);
+    z-index: 1;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.hexagon {
+    display: inline-block;
+    width: 58px;
+    height: 67px;
+    background-color: #18CFAB;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.hexagon-inner-text {
+    position: absolute;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    color: #FFFFFF;
+    padding: 7px 13px 7px 13px;
+}
+
+.hexagon-inner-text-the {
+    margin-left: 8px;
+    font-weight: normal;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+.hexagon-inner-text-hum {
+    font-size: 32px;
+    font-weight: bold;
+    color: #18CFAB;
+}
+
+.header-wrap {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar {
+    display: flex;
+    width: 850px;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-bar li > a {
+
+    text-transform: uppercase;
+    padding-bottom: 48px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.nav-bar li > a:hover {
+    color: #18CFAB;
+    border-bottom: 2px solid #18CFAB;
+}
+
+/*****************************************Section "We Are Creative"***************************************/
+
+.we-are-creative-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/backgrounds/section-1(header).jpg");
+}
+
+h2 {
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+h2 span {
+    font-weight: bold;
+    color: #18CFAB;
+}
+
+h1 {
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 78px;
+    color: #FFFFFF;
+}
+
+/*****************************Section "Advantage section"*********************************8*/
+
+.header-message {
+    padding-bottom: 100px;
+    font-weight: normal;
+    font-size: 34px;
+    color: #D4D4D4;
+}
+
+.action-button {
+    display: flex;
+    justify-content: center;
+}
+
+.header-btn {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 -3px #FFFFFF;
+    font-weight: bold;
+    font-size: 15px;
+    width: 168px;
+    height: 63px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.explore-btn {
+    margin-right: 26px;
+    background-color: #18CFAB;
+}
+
+.purchase-btn {
+    background-color: #00CBF6;
+}
+
+.advantages-section {
+    width: 100%;
+    display: flex;
+}
+
+.advantages-section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #1c2a33;
+    width: 25%;
+    height: 300px;
+    border-top: solid 7px #ffffff;
+    color: #18cfab;
+    text-transform: uppercase;
+
+}
+
+.advantages-section div:nth-child(even) {
+    background-color: #18cfab;
+    color: #ffffff;
+}
+
+.advantages-section p {
+    padding-top: 45px;
+    font-weight: bold;
+}
+
+/*****************************Section Services Tab************************************/
+
+.section-title {
+    font-weight: normal;
+    font-size: 36px;
+    color: #4E4E4E;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    margin: 35px auto 70px;
+    width: 75px;
+    height: 5px;
+    border-top: 1px solid #18cfab;
+    border-bottom: 1px solid #18cfab;
+    transform: skew(70deg);
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.tabs-title {
+    font-size: 16px;
+    line-height: 70px;
+    color: #717171;
+    height: 70px;
+    border: 1px solid #ebebeb;
+    background-color: #f8fcfe;
+    text-transform: capitalize;
+    position: relative;
+    flex: 1;
+    cursor: pointer;
+}
+
+.tabs-title.active {
+    box-sizing: border-box;
+    background-color: #18cfab;
+    color: #fff;
+}
+
+.tabs-title:hover {
+    box-sizing: border-box;
+    border: 1.5px solid #18cfab;
+}
+
+.tabs-title.active::after {
+    content: "";
+    border: 14px solid transparent;
+    border-top-color: #18cfab;
+    position: absolute;
+    bottom: -28px;
+    left: 85px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: flex;
+    margin-top: 25px;
+}
+
+.tab-img {
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.tab-text {
+    text-align: justify;
+    font-size: 14px;
+    font-style: normal;
+    color: #777777;
+}
+
+/*********************************** Section PURCHASE with button ******************************/
+
+.purchase {
+    margin-top: 90px;
+    height: 475px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), url("../img/backgrounds/section-2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.install-now-text {
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #18CFAB;
+}
+
+.smooth-reliable-text {
+    padding-bottom: 65px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #D8D8D8;
+}
+
+
+/************************************** Section Our Amazing Work **********************************/
+
+.our-amazing-work {
+    background-color: #E9EDEF;
+    padding: 0 0 100px;
+    text-align: center;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+}
+
+.category {
+    font-size: 14px;
+    color: #717171;
+    border: 1px solid #DADADA;
+    background-color: #E9EDEF;
+    text-transform: capitalize;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.category.active,
+.category:hover {
+    color: #18cfab;
+    border: 2px solid #18cfab;
+}
+
+.works {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 70px 0;
+}
+
+.work {
+    position: relative;
+}
+
+.work-img {
+    width: 100%;
+    height: 100%;
+}
+
+.work-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #E9EDEF;
+}
+
+.work:hover .work-card {
+    height: 100%;
+    border-top: 3px solid #18cfab;
+    padding: 10px;
+}
+
+.icons-box {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.work-card a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: #18cfab;
+    border: 1px solid #18cfab;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: center;
+
+}
+
+.work-card a:hover {
+    background-color: #18cfab;
+    color: #fff;
+}
+
+.work-card h5 {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #18cfab;
+    padding-top: 25px;
+}
+
+.work-card p {
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    color: #8a8a8a;
+    margin: 15px;
+    text-transform: capitalize;
+}
+
+.load-btn {
+    border: none;
+    border-radius: 5px;
+    background-color: #18cfab;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF
+}
+
+.load-btn i {
+    padding-right: 10px;
+}
+
+/************************************ Section Breaking News ****************************************/
+
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 80px;
+}
+
+.news-card {
+    display: inline-block;
+    color: #717171;
+    background: #F8FCFE;
+    border: 1px solid #F2F4F5;
+    position: relative;
+}
+
+.news-card:hover .news-date {
+    background-color: #18cfab;
+}
+
+.news-card:hover .news-header {
+    color: #18cfab;
+}
+
+.news-card h4 {
+    font-weight: bold;
+    font-size: 18px;
+    color: #717171;
+    padding-top: 8px;
+}
+
+.news-info {
+    text-align: center;
+}
+
+.news-info p {
+    display: inline-block;
+    font-weight: 300;
+    margin-top: 8px;
+    padding: 0 5px 0 5px;
+}
+
+.news-info p:nth-child(odd) {
+    border-right: 1px solid #777777;
+}
+
+.news-date {
+    width: 70px;
+    background-color: #203e38;
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    line-height: 25px;
+    padding: 10px;
+}
+
+.news-header {
+    text-align: center;
+}
+
+/*********************************** Peoples slider Section ****************************************/
+
+.peoples-slider {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/section-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 85px 0 100px;
+    text-align: center;
+}
+
+.peoples-slider h3 {
+    color: #FFFFFF;
+}
+
+.carousel .container {
+    overflow-x: hidden;
+}
+
+.carousel {
+    color: #fff;
+}
+
+.quotes {
+    height: 50px;
+    width: 50px;
+    font-size: 45px;
+    color: #18CFAB;
+    margin: 0 auto 50px;
+}
+
+.people {
+    display: flex;
+    position: relative;
+}
+
+.person {
+    min-width: 100%;
+    font-size: 16px;
+}
+
+.person-text {
+    display: inline-block;
+    width: 1160px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #bbbbbb;
+    padding-bottom: 40px;
+}
+
+.person-name {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #18cfab;
+}
+
+.person-job {
+    font-weight: 300;
+    color: #bbbbbb;
+    margin: 20px;
+}
+
+.person-img {
+    width: 140px;
+    height: 140px;
+    margin: 50px auto;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px rgba(31, 218, 181, 0.2);
+}
+
+.person-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.carousel-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    margin: 20px;
+}
+
+.next-btn {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.next-btn:hover {
+    border: none;
+    background-color: #18cfab;
+}
+
+.img-btn {
+    width: 60px;
+    height: 60px;
+    margin: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(31, 218, 181, 0.2);
+    cursor: pointer;
+}
+
+.img-btn img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.img-btn.active {
+    align-self: flex-end;
+}
+
+footer {
+    background-color: #22353F;
+}
+
+footer p {
+    font-weight: 300;
+    font-size: 14px;
+    color: #AEAEAE;
+    padding: 30px 30px;
+    text-align: center;
+}
+
+footer span {
+    color: #18cfab;
+}
+
